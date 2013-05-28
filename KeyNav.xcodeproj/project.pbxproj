@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068A0CE21754922000025D93 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068A0CE11754922000025D93 /* Cocoa.framework */; };
+		068A0CEC1754922000025D93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068A0CEA1754922000025D93 /* InfoPlist.strings */; };
+		068A0CEE1754922000025D93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068A0CED1754922000025D93 /* main.m */; };
+		068A0CF21754922000025D93 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 068A0CF01754922000025D93 /* Credits.rtf */; };
+		068A0CF51754922000025D93 /* EWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 068A0CF41754922000025D93 /* EWAppDelegate.m */; };
+		068A0CF81754922000025D93 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068A0CF61754922000025D93 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		068A0CDE1754922000025D93 /* KeyNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		068A0CE11754922000025D93 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		068A0CE41754922000025D93 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		068A0CE51754922000025D93 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		068A0CE61754922000025D93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		068A0CE91754922000025D93 /* KeyNav-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyNav-Info.plist"; sourceTree = "<group>"; };
+		068A0CEB1754922000025D93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		068A0CED1754922000025D93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		068A0CEF1754922000025D93 /* KeyNav-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyNav-Prefix.pch"; sourceTree = "<group>"; };
+		068A0CF11754922000025D93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		068A0CF31754922000025D93 /* EWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EWAppDelegate.h; sourceTree = "<group>"; };
+		068A0CF41754922000025D93 /* EWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWAppDelegate.m; sourceTree = "<group>"; };
+		068A0CF71754922000025D93 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		068A0CDB1754922000025D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068A0CE21754922000025D93 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		068A0CD51754922000025D93 = {
+			isa = PBXGroup;
+			children = (
+				068A0CE71754922000025D93 /* KeyNav */,
+				068A0CE01754922000025D93 /* Frameworks */,
+				068A0CDF1754922000025D93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		068A0CDF1754922000025D93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				068A0CDE1754922000025D93 /* KeyNav.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		068A0CE01754922000025D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				068A0CE11754922000025D93 /* Cocoa.framework */,
+				068A0CE31754922000025D93 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		068A0CE31754922000025D93 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				068A0CE41754922000025D93 /* AppKit.framework */,
+				068A0CE51754922000025D93 /* CoreData.framework */,
+				068A0CE61754922000025D93 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		068A0CE71754922000025D93 /* KeyNav */ = {
+			isa = PBXGroup;
+			children = (
+				068A0CF31754922000025D93 /* EWAppDelegate.h */,
+				068A0CF41754922000025D93 /* EWAppDelegate.m */,
+				068A0CF61754922000025D93 /* MainMenu.xib */,
+				068A0CE81754922000025D93 /* Supporting Files */,
+			);
+			path = KeyNav;
+			sourceTree = "<group>";
+		};
+		068A0CE81754922000025D93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				068A0CE91754922000025D93 /* KeyNav-Info.plist */,
+				068A0CEA1754922000025D93 /* InfoPlist.strings */,
+				068A0CED1754922000025D93 /* main.m */,
+				068A0CEF1754922000025D93 /* KeyNav-Prefix.pch */,
+				068A0CF01754922000025D93 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		068A0CDD1754922000025D93 /* KeyNav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068A0CFB1754922000025D93 /* Build configuration list for PBXNativeTarget "KeyNav" */;
+			buildPhases = (
+				068A0CDA1754922000025D93 /* Sources */,
+				068A0CDB1754922000025D93 /* Frameworks */,
+				068A0CDC1754922000025D93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyNav;
+			productName = KeyNav;
+			productReference = 068A0CDE1754922000025D93 /* KeyNav.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		068A0CD61754922000025D93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EW;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "E-Worms";
+			};
+			buildConfigurationList = 068A0CD91754922000025D93 /* Build configuration list for PBXProject "KeyNav" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 068A0CD51754922000025D93;
+			productRefGroup = 068A0CDF1754922000025D93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				068A0CDD1754922000025D93 /* KeyNav */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		068A0CDC1754922000025D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068A0CEC1754922000025D93 /* InfoPlist.strings in Resources */,
+				068A0CF21754922000025D93 /* Credits.rtf in Resources */,
+				068A0CF81754922000025D93 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		068A0CDA1754922000025D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068A0CEE1754922000025D93 /* main.m in Sources */,
+				068A0CF51754922000025D93 /* EWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		068A0CEA1754922000025D93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068A0CEB1754922000025D93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		068A0CF01754922000025D93 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068A0CF11754922000025D93 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		068A0CF61754922000025D93 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068A0CF71754922000025D93 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		068A0CF91754922000025D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		068A0CFA1754922000025D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		068A0CFC1754922000025D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyNav/KeyNav-Prefix.pch";
+				INFOPLIST_FILE = "KeyNav/KeyNav-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		068A0CFD1754922000025D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyNav/KeyNav-Prefix.pch";
+				INFOPLIST_FILE = "KeyNav/KeyNav-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		068A0CD91754922000025D93 /* Build configuration list for PBXProject "KeyNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068A0CF91754922000025D93 /* Debug */,
+				068A0CFA1754922000025D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		068A0CFB1754922000025D93 /* Build configuration list for PBXNativeTarget "KeyNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068A0CFC1754922000025D93 /* Debug */,
+				068A0CFD1754922000025D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 068A0CD61754922000025D93 /* Project object */;
+}
