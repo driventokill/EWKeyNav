@@ -11,5 +11,6 @@
 @interface EWAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (assign) IBOutlet NSMenu *mainMenu;
+@property (nonatomic, retain) NSStatusItem *statusItem;
 @end

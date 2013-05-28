@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060638BF1754C304008EBB61 /* EWCoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 060638BE1754C304008EBB61 /* EWCoverWindow.m */; };
+		060638C21754C787008EBB61 /* EWCrossView.m in Sources */ = {isa = PBXBuildFile; fileRef = 060638C11754C787008EBB61 /* EWCrossView.m */; };
 		068A0CE21754922000025D93 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068A0CE11754922000025D93 /* Cocoa.framework */; };
 		068A0CEC1754922000025D93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068A0CEA1754922000025D93 /* InfoPlist.strings */; };
 		068A0CEE1754922000025D93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068A0CED1754922000025D93 /* main.m */; };
 		068A0CF21754922000025D93 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 068A0CF01754922000025D93 /* Credits.rtf */; };
 		068A0CF51754922000025D93 /* EWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 068A0CF41754922000025D93 /* EWAppDelegate.m */; };
 		068A0CF81754922000025D93 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068A0CF61754922000025D93 /* MainMenu.xib */; };
+		068A0D081754AC5500025D93 /* icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 068A0D061754AC5500025D93 /* icon-16.png */; };
+		068A0D091754AC5500025D93 /* icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 068A0D071754AC5500025D93 /* icon-32.png */; };
+		068A0D0E1754B0B800025D93 /* EWKeyNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 068A0D0D1754B0B800025D93 /* EWKeyNav.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060638BD1754C304008EBB61 /* EWCoverWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWCoverWindow.h; sourceTree = "<group>"; };
+		060638BE1754C304008EBB61 /* EWCoverWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWCoverWindow.m; sourceTree = "<group>"; };
+		060638C01754C787008EBB61 /* EWCrossView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWCrossView.h; sourceTree = "<group>"; };
+		060638C11754C787008EBB61 /* EWCrossView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWCrossView.m; sourceTree = "<group>"; };
 		068A0CDE1754922000025D93 /* KeyNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068A0CE11754922000025D93 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		068A0CE41754922000025D93 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +38,10 @@
 		068A0CF31754922000025D93 /* EWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EWAppDelegate.h; sourceTree = "<group>"; };
 		068A0CF41754922000025D93 /* EWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWAppDelegate.m; sourceTree = "<group>"; };
 		068A0CF71754922000025D93 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		068A0D061754AC5500025D93 /* icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-16.png"; sourceTree = "<group>"; };
+		068A0D071754AC5500025D93 /* icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-32.png"; sourceTree = "<group>"; };
+		068A0D0C1754B0B800025D93 /* EWKeyNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWKeyNav.h; sourceTree = "<group>"; };
+		068A0D0D1754B0B800025D93 /* EWKeyNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWKeyNav.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +99,12 @@
 				068A0CF41754922000025D93 /* EWAppDelegate.m */,
 				068A0CF61754922000025D93 /* MainMenu.xib */,
 				068A0CE81754922000025D93 /* Supporting Files */,
+				068A0D0C1754B0B800025D93 /* EWKeyNav.h */,
+				068A0D0D1754B0B800025D93 /* EWKeyNav.m */,
+				060638BD1754C304008EBB61 /* EWCoverWindow.h */,
+				060638BE1754C304008EBB61 /* EWCoverWindow.m */,
+				060638C01754C787008EBB61 /* EWCrossView.h */,
+				060638C11754C787008EBB61 /* EWCrossView.m */,
 			);
 			path = KeyNav;
 			sourceTree = "<group>";
@@ -93,6 +112,8 @@
 		068A0CE81754922000025D93 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				068A0D061754AC5500025D93 /* icon-16.png */,
+				068A0D071754AC5500025D93 /* icon-32.png */,
 				068A0CE91754922000025D93 /* KeyNav-Info.plist */,
 				068A0CEA1754922000025D93 /* InfoPlist.strings */,
 				068A0CED1754922000025D93 /* main.m */,
@@ -157,6 +178,8 @@
 				068A0CEC1754922000025D93 /* InfoPlist.strings in Resources */,
 				068A0CF21754922000025D93 /* Credits.rtf in Resources */,
 				068A0CF81754922000025D93 /* MainMenu.xib in Resources */,
+				068A0D081754AC5500025D93 /* icon-16.png in Resources */,
+				068A0D091754AC5500025D93 /* icon-32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +192,9 @@
 			files = (
 				068A0CEE1754922000025D93 /* main.m in Sources */,
 				068A0CF51754922000025D93 /* EWAppDelegate.m in Sources */,
+				068A0D0E1754B0B800025D93 /* EWKeyNav.m in Sources */,
+				060638BF1754C304008EBB61 /* EWCoverWindow.m in Sources */,
+				060638C21754C787008EBB61 /* EWCrossView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +328,7 @@
 				068A0CFD1754922000025D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
