@@ -7,12 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+@class EWCrossView;
 @interface EWCoverWindow : NSWindow
-- (void)splitForLocation;
-- (void)moveLeft;
-- (void)moveRight;
-- (void)moveTop;
-- (void)moveBottom;
 - (NSPoint *)currentPoint;
+- (EWCrossView *)crossView;
 @end

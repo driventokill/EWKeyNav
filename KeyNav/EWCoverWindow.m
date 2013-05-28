@@ -42,7 +42,8 @@
 
 - (void)initialize
 {
-    self.backgroundColor = [NSColor blackColor];
+//    self.backgroundColor = [NSColor blackColor];
+    self.backgroundColor = [NSColor clearColor];
     self.alphaValue = 0.5;
     self.level = CGShieldingWindowLevel();
     [self setReleasedWhenClosed:NO];
@@ -58,5 +59,8 @@
     [super dealloc];
 }
 
-
+- (EWCrossView *)crossView
+{
+    return _contentView;
+}
 @end

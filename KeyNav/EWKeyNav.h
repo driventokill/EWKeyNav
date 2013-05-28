@@ -14,4 +14,5 @@
 - (void)coverScreen;
 - (void)removeCover;
 - (void)clickScreen;
+- (BOOL)isActive;
 @end

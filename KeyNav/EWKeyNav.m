@@ -8,7 +8,11 @@
 
 #import "EWKeyNav.h"
 #import "EWCoverWindow.h"
+#import "EWCrossView.h"
 @implementation EWKeyNav
+{
+    BOOL _isActive;
+}
 static EWKeyNav *instance = nil;
 
 - (id)init
@@ -19,6 +23,8 @@ static EWKeyNav *instance = nil;
                                                    styleMask:NSBorderlessWindowMask
                                                      backing:NSBackingStoreNonretained
                                                        defer:NO];
+        [_coverWindow setIgnoresMouseEvents:NO];
+        _isActive = NO;
     }
     return self;
 }
@@ -50,19 +56,39 @@ static EWKeyNav *instance = nil;
             break;
         }
     }
-    
+
     [[NSApplication sharedApplication] resignFirstResponder];
+    [self.coverWindow.crossView resetRegion];
     [self.coverWindow makeKeyAndOrderFront:self];
+    _isActive = YES;
 }
 
 - (void)removeCover
 {
+//    [[NSApplication sharedApplication] hide:self];
+    [[NSApplication sharedApplication] resignFirstResponder];
     [self.coverWindow close];
+    _isActive = NO;
 }
 
 - (void)clickScreen
 {
+    [self removeCover];
+    NSPoint mouseWarpLocation = NSMakePoint(self.coverWindow.frame.origin.x + self.coverWindow.crossView.crossPoint.x,
+                                            self.coverWindow.frame.origin.y + self.coverWindow.crossView.crossPoint.y);
+    CGPoint pt = CGPointMake(mouseWarpLocation.x, self.coverWindow.frame.size.height - mouseWarpLocation.y);
     
+    CGEventSourceRef evsrc = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState);
+    CGEventSourceSetLocalEventsSuppressionInterval(evsrc, 0.0);
+    CGAssociateMouseAndMouseCursorPosition (0);
+    CGWarpMouseCursorPosition(pt);
+    CGAssociateMouseAndMouseCursorPosition (1);
+    
+}
+
+- (BOOL)isActive
+{
+    return _isActive;
 }
 
 @end
