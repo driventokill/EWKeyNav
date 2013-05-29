@@ -76,13 +76,19 @@ static EWKeyNav *instance = nil;
     [self removeCover];
     NSPoint mouseWarpLocation = NSMakePoint(self.coverWindow.frame.origin.x + self.coverWindow.crossView.crossPoint.x,
                                             self.coverWindow.frame.origin.y + self.coverWindow.crossView.crossPoint.y);
-    CGPoint pt = CGPointMake(mouseWarpLocation.x, self.coverWindow.frame.size.height - mouseWarpLocation.y);
-    
-    CGEventSourceRef evsrc = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState);
-    CGEventSourceSetLocalEventsSuppressionInterval(evsrc, 0.0);
-    CGAssociateMouseAndMouseCursorPosition (0);
-    CGWarpMouseCursorPosition(pt);
-    CGAssociateMouseAndMouseCursorPosition (1);
+    CGFloat x = mouseWarpLocation.x;
+    CGFloat y = self.coverWindow.frame.size.height - mouseWarpLocation.y;
+    CGPoint pt = CGPointMake(x, y);
+
+    CGPostMouseEvent(pt, 1, 1, 1);
+    CGPostMouseEvent(pt, 1, 1, 0) ;
+    // http://hints.macworld.com/article.php?story=2008051406323031
+
+//    CGEventSourceRef evsrc = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState);
+//    CGEventSourceSetLocalEventsSuppressionInterval(evsrc, 0.0);
+//    CGAssociateMouseAndMouseCursorPosition (0);
+//    CGWarpMouseCursorPosition(pt);
+//    CGAssociateMouseAndMouseCursorPosition (1);
     
 }
 
